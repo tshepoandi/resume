@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial- scale=1.0">
+	<title>Tshepo's Resume</title>
+	<link rel="stylesheet" type="text/css" href="s.css">
+</head>
+<body>
+	<section>
+		<div class="bannervideo" id="slideshow">
+			<video src="raining.mp4" autoplay muted loop></video>
+			<video src="rainy.mp4" autoplay muted loop class="active"></video>
+		</div>
+		<div class="container">
+			<header id="navbar">
+				<a href="#" class="logo">RESUME</a>
+				<ul>
+					<li><a href="site.html">Personal</a></li>
+					<li><a href="proffessional.html">Proffessional</a></li>
+					<li><a href="#" class="active">Education</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</header>
+			<div class="content">
+				<div class="bannertext">
+			
+				<div class="active">
+					<h2>Education</h2>
+					<p>Completed High School at <br><i>Meyerton High School</i><br><br>
+					Attended Software Development bootcamp at <br><i>WeThinkCode</i><br><br>
+					Attended Web Development bootcamp at<br><i>UMUZI.org</i>
+					<br><br>
+					Attended Front End Development internship at <br><i>Zuri/Hng internship</i><br>
+					</p>
+				</div>
+				
+				
+			</div>
+			<ul class="sci">
+				<li><a href="#" class="photo"><img src="hng.png" alt="instagram icon"></a></li>
+				<li><a href="#" class="photo"><img src="zuri.jpeg" alt="zurilogo"></a></li>
+			</ul>
+			
+		</div>		
+	</section>
+
+	<script type="text/javascript">
+		const slideshow = document.getElementById('slideshow');
+		const slides = slideshow.getElementByTagName('video');
+		var index = 0;
+
+		function nextSlide(){
+			slides[index].classList.remove('active');
+			index = (index + 1) % slides.length;
+			slides[index].classList.add('active');	
+
+		}
+		function prevSlide(){
+			slides[index].classList.remove('active');
+			index = (index - 1 + slide.length) % slides.length;
+			slides[index].classList.add('active');	
+
+		}
+	</script>
+</body>
+</html>

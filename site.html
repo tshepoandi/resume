@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial- scale=1.0">
+	<title>Tshepo's Resume</title>
+	<link rel="stylesheet" type="text/css" href="s.css">
+</head>
+<body>
+	<section>
+		<div class="bannervideo" id="slideshow">
+			<video src="clearwater.mp4" autoplay muted loop class="active"></video>
+			<video src="rainy.mp4" autoplay muted loop></video>
+		</div>
+		<div class="container">
+			<header id="navbar">
+				<a href="#" class="logo">RESUME</a>
+				<ul>
+					<li><a href="#" class="active">Personal</a></li>
+					<li><a href="proffessional.html">Proffessional</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<span class="menuicon" onclick="togglemenu"><img src="logo.jpeg"></span>
+			</header>
+			<div class="content">
+				<div class="bannertext">
+				<div class="active">
+					<h2>Personal</h2>
+					<p>Full Names : Tshepo Samuel <br>
+						Surname : Mashiloane <br>
+						Gender : Male
+						Date Of Birth : 27 August 1996 <br>
+						ID Number : 960827******* <br>
+						Address : 54 Takbok Meyerton 1961<br>
+					</p>
+				</div>
+				
+				
+			</div>
+			<ul class="sci">
+				<li><a href="#" class="photo"><img src="hng.png" alt="instagram icon"></a></li>
+				<li><a href="#" class="photo"><img src="zuri.jpeg" alt="zurilogo"></a></li>
+			</ul>
+			
+		</div>		
+	</section>
+
+	<script type="text/javascript">
+		const slideshow = document.getElementById('slideshow');
+		const slides = slideshow.getElementByTagName('video');
+		var index = 0;
+
+		function nextSlide(){
+			slides[index].classList.remove('active');
+			index = (index + 1) % slides.length;
+			slides[index].classList.add('active');	
+
+		}
+		function prevSlide(){
+			slides[index].classList.remove('active');
+			index = (index - 1 + slide.length) % slides.length;
+			slides[index].classList.add('active');	
+
+		}
+
+		function togglemenu(){
+			const menuicon = document.querySelector('.menuicon')
+			menuicon.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
